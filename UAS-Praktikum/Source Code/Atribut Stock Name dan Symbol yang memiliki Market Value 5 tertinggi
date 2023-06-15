@@ -1,0 +1,11 @@
+#Mengurutkan data berdasarkan dari Market Value
+data = dataset.sort_values(by="Market Value ($)", ascending=False)
+
+#Mendapatkan 5 Market Value tertinggi
+top_5 = data.head(5)
+
+# Plot the data
+plt.figure(figsize=(12, 5))
+sns.barplot(x="Stock Name", y="Market Value ($)", data=top_5)
+plt.title("5 Saham Teratas dengan Nilai Pasar Tertinggi")
+plt.show()

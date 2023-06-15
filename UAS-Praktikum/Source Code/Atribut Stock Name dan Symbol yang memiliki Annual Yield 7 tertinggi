@@ -1,0 +1,11 @@
+#Mengurutkan data berdasarkan dari Annual Yield (%)
+data = dataset.sort_values(by="Annual Yield (%)", ascending=False)
+
+#Mendapatkan 7 Annual Yield tertinggi
+top_7 = data.head(7)
+
+# Plot the data
+plt.figure(figsize=(12, 5))
+sns.barplot(x="Stock Name", y="Annual Yield (%)", data=top_7)
+plt.title("7 Saham Teratas dengan Hasil Tahunan Tertinggi ")
+plt.show()
