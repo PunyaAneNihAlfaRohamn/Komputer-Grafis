@@ -1,0 +1,10 @@
+#Import Library
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+from matplotlib import colors
+from matplotlib.ticker import PercentFormatter
+
+#Baca dataset
+dataset = pd.read_csv('https://raw.githubusercontent.com/PunyaAneNihAlfaRohamn/Komputer-Grafis/main/UAS/stock.csv')
+dataset.head(13)
